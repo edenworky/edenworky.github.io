@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Eden's Homepage</title>
 <link href="https://fonts.googleapis.com/css?family=Amatica+SC" rel="stylesheet">
 <style>
@@ -13,10 +12,10 @@ html {
 body {
     width: 100%;
     height: 100%;
-    /*margin: 0;
+    margin: 0;
     display: flex;
     align-items: center;
-    justify-content: center;*/
+    justify-content: center;
 }
     
 h1 {
@@ -35,34 +34,6 @@ h1 {
 </script>
 </head>
 <body>
-<!--<h1 style="text-align: center">“Hello”, I said to the world. And the world was silent.</h1>-->
-<input id="keyboard_input" style="width: 100%"></input>
-<br />
-<textarea rows="30" columns="60" id="log" style="width: 100%"></textarea>
-
-<script type="application/javascript">
-var input = document.getElementById("keyboard_input");
-var logTextArea = document.getElementById("log");
-
-input.addEventListener("input", log);
-
-function log(event) {
-  var timestamp = makeTimestamp(new Date(event.timeStamp));
-  var currentInput = input.value;
-  
-  var log = "timestamp: " + timestamp + " " + currentInput + "\n";
-  logTextArea.value += log;
-}
-
-function makeTimestamp(date) {
-  var h = date.getHours();
-  var m = date.getMinutes();
-  var s = date.getSeconds();
-  var ms = date.getMilliseconds();
-
-  return h+":"+m+":"+s+"."+ms;
-}
-
-</script>
+<h1>“Hello”, I said to the world. And the world was silent.</h1>
 </body>
 </html>
